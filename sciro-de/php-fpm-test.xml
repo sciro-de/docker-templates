@@ -12,7 +12,7 @@
   <TemplateURL>https://raw.githubusercontent.com/sciro-de/docker-templates/master/sciro-de/php-fpm-test.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/sciro-de/docker-templates/master/sciro-de/images/php-fpm-test-icon.png</Icon>
   <Config Name="PHP Port" Target="9000" Default="" Mode="tcp" Description="Default PHP port: 9000" Type="Port" Display="always" Required="false" Mask="null"/>
-  <Config Name="Storage Path" Target="/var/www" Default="/mnt/user/webprojects" Mode="rw" Description="This is where the websites / projects are hosted." Type="Path" Display="always" Required="true" Mask="null">/mnt/user/webprojects</Config>
+  <Config Name="Storage Path" Target="/var/www" Default="/mnt/user/webprojects/data" Mode="rw" Description="This is where the websites / projects are hosted." Type="Path" Display="always" Required="true" Mask="null">/mnt/user/webprojects</Config>
   <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
   <Config Name="Key 2" Target="100" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
 </Container>
