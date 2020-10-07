@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>NGINX</Name>
+  <Repository>nginx:mainline-alpine</Repository>
+  <Registry>https://hub.docker.com/_/nginx</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Project>https://www.nginx.org/</Project>
+  <Overview>This should use the latest stable Alpine NGINX release as a standalone.</Overview>
+  <Description>This should use the latest stable Alpine NGINX release as a standalone.</Description>
+  <Category>Network:Web Status:Stable</Category>
+  <TemplateURL>https://raw.githubusercontent.com/sciro-de/docker-templates/master/sciro-de/php-fpm.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/sciro-de/docker-templates/master/sciro-de/images/nginx-icon.png</Icon>
+  <Config Name="Webserver Port (80)" Target="80" Default="" Mode="tcp" Description="Container port: 80" Type="Port" Display="always" Required="false" Mask="null"/>
+  <Config Name="Webserver Port (443)" Target="443" Default="" Mode="tcp" Description="Container port: 443" Type="Port" Display="always" Required="false" Mask="false"/>
+  <Config Name="Config Path" Target="/etc/nginx/conf.d/default.conf" Default="/mnt/user/webprojects/config/nginx/domain.example.conf" Mode="rw" Description="nginx configuration file" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/webprojects/config/nginx/domain.example.conf</Config>
+  <Config Name="Storage Path" Target="/var/www" Default="/mnt/user/webprojects/data" Mode="rw" Description="This is where the websites / projects are hosted." Type="Path" Display="always" Required="true" Mask="null">/mnt/user/webprojects/data</Config>
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+</Container>
