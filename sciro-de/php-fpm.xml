@@ -11,7 +11,7 @@
   <Category>Network:Web Status:Stable</Category>
   <TemplateURL>https://raw.githubusercontent.com/sciro-de/docker-templates/master/sciro-de/php-fpm.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/sciro-de/docker-templates/master/sciro-de/images/php-fpm-icon.png</Icon>
-  <Config Name="PHP Port" Target="9000" Default="" Mode="tcp" Description="Default PHP port: 9000" Type="Port" Display="always" Required="false" Mask="null"/>
+  <Config Name="PHP Port (9000)" Target="9000" Default="" Mode="tcp" Description="Container port: 9000" Type="Port" Display="always" Required="false" Mask="null"/>
   <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
   <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="Storage Path" Target="/var/www" Default="/mnt/user/webprojects/data" Mode="rw" Description="This is where the websites / projects are hosted." Type="Path" Display="always" Required="true" Mask="null">/mnt/user/webprojects/data</Config>
